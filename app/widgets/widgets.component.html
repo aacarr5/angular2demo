@@ -1,0 +1,41 @@
+<h1>Widgets!!</h1>
+
+<h2>{{origin}}</h2>
+
+<h3>{{cost}}</h3>
+
+<h2> {{message}} </h2>
+
+<h1>{{inputVal}}</h1>
+
+<input [(ngModel)]="inputVal"	placeholder="hey">
+
+<button [style.transform]="xpos"> Move </button>
+
+<ul>
+	<li *ngFor="#widget of widgets">
+		<span>{{widget.name}}</span>
+		<span>{{widget.origin}}</span>
+		<span>{{widget.cost}}</span>
+
+
+	</li>
+</ul>
+
+<div class="scroll" (scroll) = "handleScroll()">
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+	<h3>Hello, Andrew! </h3>
+</div>

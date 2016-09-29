@@ -1,0 +1,15 @@
+<h1>{{ title }}</h1>
+<p>{{ body }}</p>
+<p style="font-size:10px">Author: {{author}}</p>
+
+<hr>
+<div>
+  <h2 class="text-error">About: {{ message }}</h2>
+  <form class="form-inline">
+    <input type="text" [(ngModel)]="message" placeholder="Message">
+
+    <input type="text" [(ngModel)]="author" placeholder="What's your name?">
+
+    <button type="submit" class="btn" (click)="updateMessage(message)">Update Message</button>
+  </form>
+</div>
